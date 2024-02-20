@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<!-- css links -->
+<link rel="stylesheet" href="../pages/paymentMethod.css">
+    <link rel="stylesheet" href="/mystyle.css">
+    <!-- <link rel="stylesheet" href="/pages/bag.css"> -->
+    <title>Payment Method</title>
+ 
+</head>
+<body>
+    <header>
+        <div id="toggleicon">
+            <img src="/logos & icons/menu.svg" alt="">
+        </div>
+        <div id="home-logo">
+            <img src="/images/myntra_logo.webp" alt="Home logo">
+            <div id="navbar">
+                <div id="remove">X</div>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home&Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Studio <sup>new</sup></a>
+            </div>
+        </div>
+        <div id="search-product">
+            <input type="text" placeholder="search product">
+        </div>
+        <div id="action-bar">
+            <div id="profile" class="nav-action">
+                <img src="/logos & icons/person.svg" alt="">
+                <p>profile</p>
+            </div>
+            <div id="Wishlist" class="nav-action">
+                <img src="/logos & icons/favoriate.svg" alt="">
+                <p>Fevorite</p>
+            </div>
+            <a href=" ../pages/bag.html">
+                <div id="bag" class="nav-action">
+                    <img src="/logos & icons/shopping-bag.svg" alt="">
+                    <p>bag</p>
+                    <span id="bag-item-count">0</span>
+         </a>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+    <h2>Please Submit it to Complete payment Method</h2>
+
+        <div class="main">
+        <div class="card-data">
+    <div class="img1">
+        <img src="/images/bg-card-front.png" alt="">
+    </div>
+    <div class="img2">
+        <img src="/images/bg-card-back.png" alt="" >
+    </div>
+    <div class="frontcard-data">
+        <div class="logo"></div>
+        <div class="cardnumber">0000 0000 0000 0000</div>
+        <div class="cardnumbername">
+            <label for="">C.Holder Name</label>
+            <div id="chname">stive</div>
+        </div>
+        <!-- <div class="exp-date">
+            <div id="cardmonth">mm</div>
+            <div>/</div>
+            <div id="cardyear">yy</div>
+        </div> -->
+        <div class="cvc-input">
+            <div id="cvcinput">123</div>
+        </div>
+    </div>
+   </div>
+
+    <form  onsubmit="Validationform(event)">
+        <label for="name">Card Holder Name</label><br>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <div id="nameerror" class="error"></div>
+        <label for="">Debit card or cridit card</label><br>
+        <input type="number" id="card" placeholder=" e.g 1234 1234 1234 1234" maxlength="19">
+        <div id="card-number-error" class="error"></div><br>
+        <label style="display: block;">(Exp.Date (month/year))</label>
+
+        <div class="date-check">
+<span>
+                 <select name="" id="month" >
+                    <option value="">select month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <div id="montherror" class="error"></div>
+            </span><span>
+             
+                <select name="" id="year">
+                    <option value="">Select year</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+                    <option value="2036">2036</option>
+                    <option value="2037">2037</option>
+                    <option value="2038">2038</option>
+                    <option value="2039">2039</option>
+                    <option value="2040">2040</option>
+                    <option value="2041">2041</option></select>
+                <div id="yearerror" class="error"></div><br>
+            </span><span>
+            <div class="cvc">
+                <label for="" style="display: block;">cvc</label>
+                <input type="number" id="cvc" placeholder="232" maxlength="3">
+                <div id="cvcerror" class="error"></div>
+                </div>
+            </div>
+        
+         <select name="" id="selectCountary">
+            <option value="select country">select country</option>
+        <option value="pakistan">pakistan</option>
+        <option value="uae">uae</option>
+        <option value="usa">usa</option>
+        <option value="oman">oman</option>
+        <option value="saudi">saudi</option>
+        <option value="turkish">turkish</option>
+    </select> 
+    <div id="countaryerror" class="error"></div>
+    <br><br> <button type="submit" id="btn">submit</button>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <div id="footer-container">
+            <div id="column-footer">
+                <h3>Online shoping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home&Living</a>
+                <a href="#">Beauty</a>
+            </div>
+            <div id="column-footer">
+                <h3>Online shoping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home&Living</a>
+                <a href="#">Beauty</a>
+            </div>
+            <div id="column-footer">
+                <h3>Online shoping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home&Living</a>
+                <a href="#">Beauty</a>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    <p id="footer-para" style="text-align: center; font-size: 18px; background-color: rgb(179, 176, 176);"> www.metra.com &copy; All right reserved</p>
+    <script src="./items.js"></script>
+    <script src="../bag.js"></script>
+    <script src="/myscript.js"></script>
+   <script src="../paymentMethod.js"></script>
+</body>
+</html>

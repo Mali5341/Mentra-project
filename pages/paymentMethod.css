@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(91, 91, 233);
+
+}
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 44px;
+width: 100%;
+height: 100vh;
+ }
+ .container h2{
+    padding: 27px 0px;
+    text-align: center;
+ }
+ .main{
+display: flex;
+    width: 70%;
+    /* height: 50%; */
+ }
+
+ form{
+    width: 50%;
+ }
+
+ .card-data{
+  margin: 0px 12px;
+  width: 50%;
+ }
+ label{
+  font-size: 15px;
+  font-weight: 700;
+ }
+ #name{
+  /* width: 292px; */
+  width: 90%;
+   padding: 5px;
+ }
+ ::placeholder{
+  font-weight: 600;
+  color: grey;
+ }
+ #card{
+  /* width: 292px; */
+  width: 90%;
+  padding: 5px;
+ }
+
+ .date-check{
+  display: flex;
+ }
+ #month{
+  width: 90px;
+  padding: 5px;
+ }
+ #year{
+    width: 90px;
+  padding: 5px;
+  margin: 0px 4px;
+ }
+ .cvc{
+  margin-top: -18px;
+ }
+ #cvc{
+  padding: 5px;
+  margin-left: 11px;
+    width: 90px;
+
+ }
+ .error{
+  color: red;
+  font-size: 14px;
+ }
+
+ .cardnumber{
+   position: relative;
+   top: -270px;
+   left: 43px;
+   color: white;
+ }
+ .logo{
+  width: 34px;
+  height: 34px;
+  background-color: white;
+   position: relative;
+   top: -282px;
+   left: 34px;
+ }
+ .cardnumbername{
+  color: #ffff;
+  position: relative;
+   top: -245px;
+   left: 14px;
+ }
+ /* .exp-date{
+  display: flex;
+  position: relative;
+  top: -265px;
+  /* left: 172px; 
+  color: white;
+ } */
+ .cvc-input{
+  position: relative;
+  top: -180px;
+  left: 40px;
+  color: #ffff;
+ }
+ .img2{
+  margin-top: -20px;
+  margin-left: 13px;
+ 
+ }
+ .img2 img{
+  width: 240px;
+  height: 150px;
+
+ }
+ 
+ .img1 img{
+  z-index: 10;
+  width: 240px;
+  height: 150px;
+ }
+ #btn{
+   width: 200px;
+   display: block;
+   margin: 0 auto;
+   padding: 7px;
+   background-color: red;
+   border: none;
+   color: #ffff;
+   border-radius: 8px;
+   cursor: pointer;
+ }
+ #footer-container #column-footer a{
+    color: rgb(52, 51, 51);
+ }
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button{
+display: none;
+  }
+  input{
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    padding: 9px 3px;
+  }
