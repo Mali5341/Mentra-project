@@ -1,155 +1,103 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(91, 91, 233);
-
-}
-.container{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-top: 44px;
-width: 100%;
-height: 100vh;
- }
- .container h2{
-    padding: 27px 0px;
-    text-align: center;
- }
- .main{
-display: flex;
-    width: 70%;
-    /* height: 50%; */
- }
-
- form{
-    width: 50%;
- }
-
- .card-data{
-  margin: 0px 12px;
-  width: 50%;
- }
- label{
-  font-size: 15px;
-  font-weight: 700;
- }
- #name{
-  /* width: 292px; */
-  width: 90%;
-   padding: 5px;
- }
- ::placeholder{
-  font-weight: 600;
-  color: grey;
- }
- #card{
-  /* width: 292px; */
-  width: 90%;
-  padding: 5px;
- }
-
- .date-check{
-  display: flex;
- }
- #month{
-  width: 90px;
-  padding: 5px;
- }
- #year{
-    width: 90px;
-  padding: 5px;
-  margin: 0px 4px;
- }
- .cvc{
-  margin-top: -18px;
- }
- #cvc{
-  padding: 5px;
-  margin-left: 11px;
-    width: 90px;
-
- }
- .error{
-  color: red;
-  font-size: 14px;
- }
-
- .cardnumber{
-   position: relative;
-   top: -270px;
-   left: 43px;
-   color: white;
- }
- .logo{
-  width: 34px;
-  height: 34px;
-  background-color: white;
-   position: relative;
-   top: -282px;
-   left: 34px;
- }
- .cardnumbername{
-  color: #ffff;
-  position: relative;
-   top: -245px;
-   left: 14px;
- }
- /* .exp-date{
-  display: flex;
-  position: relative;
-  top: -265px;
-  /* left: 172px; 
-  color: white;
- } */
- .cvc-input{
-  position: relative;
-  top: -180px;
-  left: 40px;
-  color: #ffff;
- }
- .img2{
-  margin-top: -20px;
-  margin-left: 13px;
- 
- }
- .img2 img{
-  width: 240px;
-  height: 150px;
-
- }
- 
- .img1 img{
-  z-index: 10;
-  width: 240px;
-  height: 150px;
- }
- #btn{
-   width: 200px;
-   display: block;
-   margin: 0 auto;
-   padding: 7px;
-   background-color: red;
-   border: none;
-   color: #ffff;
-   border-radius: 8px;
-   cursor: pointer;
- }
- #footer-container #column-footer a{
-    color: rgb(52, 51, 51);
- }
-  input::-webkit-inner-spin-button,
-  input::-webkit-outer-spin-button{
-display: none;
-  }
-  input{
-    outline: none;
-    border-radius: 6px;
     border: none;
-    padding: 9px 3px;
-  }
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+    background: #d6eef1;
+}
+
+.container form {
+    width: 800px;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col {
+    flex: 1 1 250px;
+}
+
+.col .title {
+    font-size: 20px;
+    color: rgb(237, 55, 23);
+    padding-bottom: 5px;
+}
+
+.col .inputBox {
+    margin: 15px 0;
+}
+
+.col .inputBox label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.col .inputBox input,
+.col .inputBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.col .inputBox input:focus,
+.col .inputBox select:focus {
+    border: 1px solid #000;
+}
+
+.col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.col .flex .inputBox {
+    flex: 1 1;
+    margin-top: 5px;
+}
+
+.col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit_btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background:  #8D1CF6;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.container form .submit_btn:hover {
+    background:#a95bf1;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}

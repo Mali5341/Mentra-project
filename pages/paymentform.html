@@ -1,193 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-<!-- css links -->
-<link rel="stylesheet" href="../pages/paymentMethod.css">
-    <link rel="stylesheet" href="/mystyle.css">
-    <!-- <link rel="stylesheet" href="/pages/bag.css"> -->
-    <title>Payment Method</title>
- 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Online Payment-Page</title>
+    <link rel="stylesheet" href="paymentMethod.css">
 </head>
+
 <body>
-    <header>
-        <div id="toggleicon">
-            <img src="/logos & icons/menu.svg" alt="">
-        </div>
-        <div id="home-logo">
-            <img src="/images/myntra_logo.webp" alt="Home logo">
-            <div id="navbar">
-                <div id="remove">X</div>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home&Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Studio <sup>new</sup></a>
-            </div>
-        </div>
-        <div id="search-product">
-            <input type="text" placeholder="search product">
-        </div>
-        <div id="action-bar">
-            <div id="profile" class="nav-action">
-                <img src="/logos & icons/person.svg" alt="">
-                <p>profile</p>
-            </div>
-            <div id="Wishlist" class="nav-action">
-                <img src="/logos & icons/favoriate.svg" alt="">
-                <p>Fevorite</p>
-            </div>
-            <a href=" ../pages/bag.html">
-                <div id="bag" class="nav-action">
-                    <img src="/logos & icons/shopping-bag.svg" alt="">
-                    <p>bag</p>
-                    <span id="bag-item-count">0</span>
-         </a>
-        </div>
-        </div>
-    </header>
     <div class="container">
-    <h2>Please Submit it to Complete payment Method</h2>
 
-        <div class="main">
-        <div class="card-data">
-    <div class="img1">
-        <img src="/images/bg-card-front.png" alt="">
-    </div>
-    <div class="img2">
-        <img src="/images/bg-card-back.png" alt="" >
-    </div>
-    <div class="frontcard-data">
-        <div class="logo"></div>
-        <div class="cardnumber">0000 0000 0000 0000</div>
-        <div class="cardnumbername">
-            <label for="">C.Holder Name</label>
-            <div id="chname">stive</div>
-        </div>
-        <!-- <div class="exp-date">
-            <div id="cardmonth">mm</div>
-            <div>/</div>
-            <div id="cardyear">yy</div>
-        </div> -->
-        <div class="cvc-input">
-            <div id="cvcinput">123</div>
-        </div>
-    </div>
-   </div>
+        <form action="#">
 
-    <form  onsubmit="Validationform(event)">
-        <label for="name">Card Holder Name</label><br>
-        <input type="text" id="name" placeholder="Enter Your Name">
-        <div id="nameerror" class="error"></div>
-        <label for="">Debit card or cridit card</label><br>
-        <input type="number" id="card" placeholder=" e.g 1234 1234 1234 1234" maxlength="19">
-        <div id="card-number-error" class="error"></div><br>
-        <label style="display: block;">(Exp.Date (month/year))</label>
+            <div class="row">
 
-        <div class="date-check">
-<span>
-                 <select name="" id="month" >
-                    <option value="">select month</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-                <div id="montherror" class="error"></div>
-            </span><span>
-             
-                <select name="" id="year">
-                    <option value="">Select year</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2027</option>
-                    <option value="2028">2028</option>
-                    <option value="2029">2029</option>
-                    <option value="2030">2030</option>
-                    <option value="2031">2031</option>
-                    <option value="2032">2032</option>
-                    <option value="2033">2033</option>
-                    <option value="2034">2034</option>
-                    <option value="2035">2035</option>
-                    <option value="2036">2036</option>
-                    <option value="2037">2037</option>
-                    <option value="2038">2038</option>
-                    <option value="2039">2039</option>
-                    <option value="2040">2040</option>
-                    <option value="2041">2041</option></select>
-                <div id="yearerror" class="error"></div><br>
-            </span><span>
-            <div class="cvc">
-                <label for="" style="display: block;">cvc</label>
-                <input type="number" id="cvc" placeholder="232" maxlength="3">
-                <div id="cvcerror" class="error"></div>
+                <div class="col">
+                    <h3 class="title">
+                        Payment Method
+                    </h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                              Full Name:
+                          </label>
+                        <input type="text" id="name" 
+                               placeholder="Enter your full name" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="email">
+                              Email:
+                          </label>
+                        <input type="text" id="email" 
+                               placeholder="Enter email address" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="address">
+                              Address:
+                          </label>
+                        <input type="text" id="address" 
+                               placeholder="Enter address" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="city">
+                              City:
+                          </label>
+                        <input type="text" id="city" 
+                               placeholder="Enter city" 
+                               required>
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="inputBox">
+                            <label for="state">
+                                  State:
+                              </label>
+                            <input type="text" id="state" 
+                                   placeholder="Enter state" 
+                                   required>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="zip">
+                                  Zip Code:
+                              </label>
+                            <input type="number" id="zip" 
+                                   placeholder="123 456" 
+                                   maxlength="8" required
+                                   pattern="\d{8}">
+                        </div>
+
+                    </div>
+
                 </div>
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                              Card Accepted:
+                          </label>
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20240715140014/Online-Payment-Project.webp" 
+                             alt="credit/debit card image">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                              Name On Card:
+                          </label>
+                        <input type="text" id="cardName" 
+                               placeholder="Enter card name" 
+                               required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardNum">
+                              Credit Card Number:
+                          </label>
+                        <input type="text" id="cardNum" 
+                               placeholder="1111-2222-3333-4444" 
+                               maxlength="19" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="">Exp Month:</label>
+                        <select name="" id="">
+                            <option value="">Choose month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">Exp Year:</label>
+                            <select name="" id="">
+                                <option value="">Choose Year</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="cvv">CVV</label>
+                            <!-- Change to type="text" and use pattern to ensure only numbers are entered -->
+                            <input type="number" id="cvv" 
+                                   placeholder="123" 
+                                   maxlength="3" required 
+                                   pattern="\d{3}" title="Enter a 3-digit CVV">
+                        </div>
+                        
+                    </div>
+
+                </div>
+
             </div>
-        
-         <select name="" id="selectCountary">
-            <option value="select country">select country</option>
-        <option value="pakistan">pakistan</option>
-        <option value="uae">uae</option>
-        <option value="usa">usa</option>
-        <option value="oman">oman</option>
-        <option value="saudi">saudi</option>
-        <option value="turkish">turkish</option>
-    </select> 
-    <div id="countaryerror" class="error"></div>
-    <br><br> <button type="submit" id="btn">submit</button>
-    </form>
+
+            <input type="submit" value="Proceed to Checkout" 
+                   class="submit_btn" onclick="VerifyCarditionals()">
+        </form>
+
     </div>
-    </div>
-    <footer>
-        <div id="footer-container">
-            <div id="column-footer">
-                <h3>Online shoping</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home&Living</a>
-                <a href="#">Beauty</a>
-            </div>
-            <div id="column-footer">
-                <h3>Online shoping</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home&Living</a>
-                <a href="#">Beauty</a>
-            </div>
-            <div id="column-footer">
-                <h3>Online shoping</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home&Living</a>
-                <a href="#">Beauty</a>
-            </div>
-        </div>
-    </footer>
-    <hr>
-    <p id="footer-para" style="text-align: center; font-size: 18px; background-color: rgb(179, 176, 176);"> www.metra.com &copy; All right reserved</p>
-    <script src="./items.js"></script>
-    <script src="../bag.js"></script>
-    <script src="/myscript.js"></script>
-   <script src="../paymentMethod.js"></script>
+    <script type="text/javascript" src="../paymentMethod.js"></script>
 </body>
+
 </html>

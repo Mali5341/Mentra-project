@@ -40,6 +40,7 @@ function DisplayItemsOnHomPage() {
         <div class="rating">
             ${item.rating.stars}⭐|${item.rating.count}
         </div>
+        <div style="padding:12px;">
         <div class="company-name">${item.company}</div>
         <div class="item-name">${item.item_name}</div>
         <div class="price">
@@ -48,6 +49,7 @@ function DisplayItemsOnHomPage() {
             <span class="discount">${item.discount_percentage}% OFF</span>
         </div>
         <button class="btn" onclick ="addTobag(${item.id})">Add product</button>
+        </div>
         </div>`
     })
     itemcontainerElement.innerHTML = innerHTML;
